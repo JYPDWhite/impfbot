@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#config file which contains credentials
+config.py
+
+#python environment
+/impfung-env
