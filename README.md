@@ -9,6 +9,9 @@
 
 ## Run
 
-Simply run ./runBot.sh 
+Simply run `./runBot.sh`
 
--Legal advice: There is no hint or rule on the website prohibitng the usage of any tools so I think this is legal. But please use this script responsible. Dont't adjust the sleep timers do avoid overloading the website.
+- Legal advice: There is no hint or rule on the website prohibitng the usage of any tools so I think this is legal. But please use this script responsible. Dont't adjust the sleep timers do avoid overloading the website.
+
+## Matschcode
+It ain't Matschcode if it works. 
