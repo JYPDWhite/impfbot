@@ -8,6 +8,7 @@ import time
 import config
 
 try:
+    telegram_send.send(messages=["Bot gestartet."])
     driver = webdriver.Chrome()
     driver.get("https://sachsen.impfterminvergabe.de")
 
@@ -25,7 +26,7 @@ try:
     elemUsername.send_keys(config.username)
     elemPasswort.send_keys(config.passwort)
 
-    elem = driver.find_element_by_css_selector("#WorkflowButton-4212")
+    elem = driver.find_element_by_css_selector("#WorkflowButton-4748")
     time.sleep(2)
     elem.click()
 
@@ -40,7 +41,7 @@ try:
     driver.implicitly_wait(30)
     while True:
         #continue to next page and look for aviable event
-        elem = driver.find_element_by_css_selector("#WorkflowButton-4212")
+        elem = driver.find_element_by_css_selector("#WorkflowButton-4748")
         elem.click()
         time.sleep(4)
         
@@ -57,7 +58,7 @@ try:
                     print()
                     print("Eingabe nicht erkannt.")
 
-        elem = driver.find_element_by_css_selector("#WorkflowButton-4255")
+        elem = driver.find_element_by_css_selector("#WorkflowButton-4792")
         elem.click()
         time.sleep(4)
 
